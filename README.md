@@ -185,4 +185,6 @@ but it isn't used because I think it isn't necesary because the communication be
 and transactions-validation microservice send the message to the queue and transactions-persistence get the message
 from the queue and if transactions-persistence is temporary unavailable the message is waiting on the queue until
 transactions-persistence microservice is available.
+- To retrieve the pdfreport, I used a POST request because I think cnp is a sensible information and it shouldn't 
+appear in the endpoint.
 - there are some unit tests
