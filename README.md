@@ -105,39 +105,39 @@ Tranzactii:
 1. IBAN_TO_IBAN | 7 tranzactii | -2.500 RON
     a. Detalii tranzactia 1
       - Plata: 1.000
-      - Descriere: Payment from John's iban to Ana's iban
+      - Descriere: Payment from John's iban to Bill's iban
     b. Detalii tranzactia 2
       - Incasare: 1.500
       - Descriere: Payment from Ion's iban to John's iban
     c. Detalii tranzactia 3
       - Incasare: 800
-      - Descriere: Payment from Ana's iban to John's iban
+      - Descriere: Payment from Bill's iban to John's iban
     d. Detalii tranzactia 4
       - Plata: 750
       - Descriere: Payment from John's iban to Ion's iban
     e. Detalii tranzactia 5
       - Plata: 1.950
-      - Descriere: Payment from John's iban to Ana's iban
+      - Descriere: Payment from John's iban to Bill's iban
     f. Detalii tranzactia 6
       - Plata: 850
-      - Descriere: Payment from John's iban to Ana's iban
+      - Descriere: Payment from John's iban to Bill's iban
     g. Detalii tranzactia 7
       - Plata: 250
-      - Descriere: Payment from John's iban to Ana's iban
+      - Descriere: Payment from John's iban to Bill's iban
 2. IBAN_TO_WALLET | 3 tranzactii | -700 RON
     a. Detalii tranzactia 1
       - Plata: 1.000
       - Descriere: Payment from John's iban to Ion's wallet
     b. Detalii tranzactia 2
       - Plata: 900
-      - Descriere: Payment from John's iban to Ana's wallet
+      - Descriere: Payment from John's iban to Bill's wallet
     c. Detalii tranzactia 3
       - Incasare: 1.200
-      - Descriere: Payment from Ana's iban to John's wallet
+      - Descriere: Payment from Bill's iban to John's wallet
 3. WALLET_TO_IBAN | 3 tranzactii | 1.400 RON
     a. Detalii tranzactia 1
       - Plata: 1.800
-      - Descriere: Payment from John's wallet to Ana's iban
+      - Descriere: Payment from John's wallet to Bill's iban
     b. Detalii tranzactia 2
       - Incasare: 2.100
       - Descriere: Payment from Ion's wallet to John's iban
@@ -147,31 +147,31 @@ Tranzactii:
 4. WALLET_TO_WALLET | 9 tranzactii | 1.060 RON
     a. Detalii tranzactia 1
       - Plata: 1.000
-      - Descriere: Payment from John's wallet to Ana's wallet
+      - Descriere: Payment from John's wallet to Bill's wallet
     b. Detalii tranzactia 2
       - Plata: 600
       - Descriere: Payment from John's wallet to Ion's wallet
     c. Detalii tranzactia 3
       - Incasare: 1.400
-      - Descriere: Payment from Ana's wallet to John's wallet
+      - Descriere: Payment from Bill's wallet to John's wallet
     d. Detalii tranzactia 4
       - Incasare: 870
-      - Descriere: Payment from Ana's wallet to John's wallet
+      - Descriere: Payment from Bill's wallet to John's wallet
     e. Detalii tranzactia 5
       - Plata: 870
-      - Descriere: Payment from John's wallet to Ana's wallet
+      - Descriere: Payment from John's wallet to Bill's wallet
     f. Detalii tranzactia 6
       - Plata: 870
-      - Descriere: Payment from Gigi's wallet to Ana's wallet
+      - Descriere: Payment from Gigi's wallet to Bill's wallet
     g. Detalii tranzactia 7
       - Plata: 870
-      - Descriere: Payment from John's wallet to Ana's wallet
+      - Descriere: Payment from John's wallet to Bill's wallet
     h. Detalii tranzactia 8
       - Incasare: 2.500
-      - Descriere: Payment from Ana's wallet to John's wallet
+      - Descriere: Payment from Bill's wallet to John's wallet
     i. Detalii tranzactia 9
       - Incasare: 500
-      - Descriere: Payment from Ana's wallet to John's wallet
+      - Descriere: Payment from Bill's wallet to John's wallet
 ```
 
 Informations abut project:
