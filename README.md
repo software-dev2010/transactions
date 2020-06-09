@@ -1,9 +1,12 @@
 
 1. Create a MySQL db:
+```
 create database transaction01;
 use transaction01;
+```
 
 2. Create a table:
+```
 CREATE TABLE `account` (
   `accountId` bigint(19) NOT NULL AUTO_INCREMENT,
   `accountNumber` varchar(100) DEFAULT NULL,
@@ -13,8 +16,10 @@ CREATE TABLE `account` (
   `currentBalance` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`accountId`)
 );
+```
 
 3. Create another table:
+```
 CREATE TABLE `transaction` (
   `transactionId` bigint(19) NOT NULL AUTO_INCREMENT,
   `transactionType` varchar(100) DEFAULT NULL,
@@ -24,8 +29,10 @@ CREATE TABLE `transaction` (
   `description` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`transactionId`)
 );
+```
 
 4. Insert some values:
+```
 insert into account (accountNumber, iban, cnp, name, currentBalance) 
 values ('41230192109218940921875412', 'GR96 0810 0010 0000 0123 45', '1880724190281', 'Ion Ionescu', 9908);
 
@@ -34,10 +41,13 @@ values ('10982738574984850120958235', 'SA89 3704 0044 0532 0130 00', '1831222132
 
 insert into account (accountNumber, iban, cnp, name, currentBalance) 
 values ('73847120498549304812908475', 'FR91 1000 0000 0123 4567 89', '2761031799173', 'Bill Black', 15670);
+```
 
 5. Add your MySQL credentials in the transactions-persistence microservice in application.properties
+```
 spring.datasource.username = root
 spring.datasource.password = parola
+```
 
 6. Start ActiveMQ on your machine (The app uses JMS and ActiveMQ for asynchorous communication)
 
@@ -45,7 +55,7 @@ spring.datasource.password = parola
 transactions-validations uses port 8080 and transactions-persistence uses port 8090
 
 8. You can use these endpoints for testing:
-
+```
 POST request: http://localhost:8080/ibantoiban
 {
     "fromIban": "SA89 3704 0044 0532 0130 00",
@@ -82,10 +92,12 @@ POST request: http://localhost:8090/pdfreport
 {
     "cnp": "1831222132132"
 }
+```
+
 The pdf raport will be downloaded on the machine
 
 Example of raport:
-
+```
 1. Nume: John Book
 2. CNP: 1831222132132
 3. IBAN: SA89 3704 0044 0532 0130 00
@@ -160,6 +172,7 @@ Tranzactii:
     i. Detalii tranzactia 9
       - Incasare: 500
       - Descriere: Payment from Ana's wallet to John's wallet
+```
 
 Informations abut project:
 - transactions-validation is for validation, for example the regex pattern accept this kind of iban:
